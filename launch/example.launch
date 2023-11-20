@@ -1,0 +1,10 @@
+<launch>
+    <include file="$(find kmriiwa_moveit)/launch/move_group.launch">
+        <arg name="publish_monitored_planning_scene" value="true" />
+    </include>
+
+    <include file="$(find kmriiwa_gazebo)/launch/kmriiwa_empty_world.launch" />
+
+    <include file="$(find kmriiwa_vis)/launch/moveit_view.launch"/>
+
+</launch>
